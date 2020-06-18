@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Design</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="index.html">Design <span>?</span></a></div>
+        <a href="#menu">Menu</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="membre.html">Qui sommes nous</a></li>
+            <li><a href="personification.html">Ajouter des idée de designs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner full">
+        <article>
+            <img src="images/slide01.jpg" alt="design" />
+            <div class="inner">
+                <header>
+                    <p>Besoin de nature ?</p>
+                    <h2>Jungle</h2>
+                </header>
+            </div>
+        </article>
+        <article>
+            <img src="images/slide02.jpg" alt="design" />
+            <div class="inner">
+                <header>
+                    <p>Besoin de calme ?</p>
+                    <h2>Cosy</h2>
+                </header>
+            </div>
+        </article>
+        <article>
+            <img src="images/slide03.jpg" alt="design" />
+            <div class="inner">
+                <header>
+                    <p>Besoin de simplicité ?</p>
+                    <h2>Soft</h2>
+                </header>
+            </div>
+        </article>
+    </section>
+
+    <!-- Form -->
+    <section id="three" class="wrapper style2">
+        <form method="POST" class="top" id="form" action="#">
+            <div class="container">
+                <input type="text" id="nom" name="user_fistname" placeholder="Nom du design" required>
+                <input type="text" id="theme" name="user_place" placeholder="Thème" required>
+                <input type="text" id="prix" name="user_price" placeholder="Prix" required>
+            </div>
+
+            <div id="buttons">
+                <button type="button" onclick="addTableRow()">Ajouter</button>
+            </div>
+        </form>
+
+        <div class="tableau">
+            <table id="tab">
+                <caption>Idée de Design</caption>
+                <tr>
+                    <th>Nom</th>
+                    <th>Theme</th>
+                    <th>Prix</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; Jemima VALERE / Chaima OUBERKA / Sirine BENSALEM. Projet Web.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/personification.js"></script>
+</body>
+
+</html>
